@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<!--Javascript-->
+	<script type="text/javascript" src="../js/javascript.js"></script>
+	<!--tildes y la letra ñ-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<!--Nombre que visualiraremos de la página-->
+	<title>Asignación alumnos</title>
+	<!--css-->
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+</head>
+<body>
+
+	<!--Opciones de registrarse o login-->
+	<div id="registro_login">
+			<a id="registro" href="registro.html">Registro</a>
+			<h5 id="separador">|</h5>
+			<a id="login" href="login.html">Login</a>
+	</div>
+		
+	<!--Encabezado de la pagina principal con la imagen-->
+	<div id="encabezado">
+		<h1 id="titulo_encabezado">Matriculación en colegios de Mérida</h1>
+	</div>
+
+	<!--Menu horizontal debajo del encabezado. opciones disponibles: formulario y listado-->
+	<div id="menu">
+		<a id="opciones_menu" href="principal.html">Inicio</a>
+		<h5 id="separador">|</h5>
+		<a id="opciones_menu" href="formulario.html">Formulario de inscripción</a>
+		<h5 id="separador">|</h5>
+		<a id="opciones_menu" href="listado.html">Listado y puntuaciones</a>
+		<h5 id="separador">|</h5>
+		<a id="opciones_menu" href="drag_and_drop.html">Asignar colegios</a>
+	</div>
+	
+    <!-- Elementos arrastrables -->
+	<div style="float:left; padding-top: 3%;width:49vh; height:auto;">
+		<div id="caja1" draggable="true" ondragstart="dragstart(this, event)" ondrag="drag(this, event)" ondragend="dragend(this, event)"> 
+		<span>Cristina Ruiz Palma</span>
+		</div>
+		
+		 <div id="caja2" draggable="true" ondragstart="dragstart(this, event)" ondrag="drag(this, event)" ondragend="dragend(this, event)"> 
+		 <span>Lorena Vázquez Rodríguez</span>
+		</div>
+		
+		<div id="caja3" draggable="true" ondragstart="dragstart(this, event)" ondrag="drag(this, event)" ondragend="dragend(this, event)"> 
+		<span>Lucía Pérez Luna</span>
+		</div>
+		
+		 <div id="caja4" draggable="true" ondragstart="dragstart(this, event)" ondrag="drag(this, event)" ondragend="dragend(this, event)"> 
+		 <span>Minerva Estrella Navidad</span>
+		</div>
+		
+		<div id="caja5" draggable="true" ondragstart="dragstart(this, event)" ondrag="drag(this, event)" ondragend="dragend(this, event)"> 
+		<span>Nieve Serrano Marzal</span>
+		</div>
+		
+		 <div id="caja6" draggable="true" ondragstart="dragstart(this, event)" ondrag="drag(this, event)" ondragend="dragend(this, event)"> 
+		 <span>Blanca Pino Galán</span>
+		</div>
+		
+		<div id="caja7" draggable="true" ondragstart="dragstart(this, event)" ondrag="drag(this, event)" ondragend="dragend(this, event)"> 
+		<span>Cristina Pavón Perez</span>
+		</div>
+		
+		 <div id="caja8" draggable="true" ondragstart="dragstart(this, event)" ondrag="drag(this, event)" ondragend="dragend(this, event)"> 
+		 <span>Esther Stark Raider</span>
+		</div>
+		
+		<div id="caja9" draggable="true" ondragstart="dragstart(this, event)" ondrag="drag(this, event)" ondragend="dragend(this, event)"> 
+		<span>Spyro Drake Purple</span>
+		</div>
+		
+		 <div id="caja10" draggable="true" ondragstart="dragstart(this, event)" ondrag="drag(this, event)" ondragend="dragend(this, event)"> 
+		 <span>Vaiana Moana Disney</span>
+		</div>
+		
+		<div id="caja11" draggable="true" ondragstart="dragstart(this, event)" ondrag="drag(this, event)" ondragend="dragend(this, event)"> 
+		<span>Mercy Rocket Mantis</span>
+		</div>
+		
+		 <div id="caja12" draggable="true" ondragstart="dragstart(this, event)" ondrag="drag(this, event)" ondragend="dragend(this, event)"> 
+		 <span>Gamora Titán Infinito</span>
+		</div>
+	</div>
+	
+	<!-- Contenedores de los colegios-->
+	<div style="float:left; padding-top: 3%;width:103vh; height:auto;">
+		<div class="container" id="drag_and_drop1" ondrop="drop(this, event)" ondragenter="dragenter(this, event)" ondragover="dragover(event)" ondragleave="dragleave(this, event)">CEIP Federico García Lorca
+		</div>
+		
+		<div class="container" id="drag_and_drop2" ondrop="drop(this, event)" ondragenter="dragenter(this, event)" ondragover="dragover(event)" ondragleave="dragleave(this, event)">CEIP Giner de los Ríos
+		</div>
+		
+		<div class="container" id="drag_and_drop3" ondrop="drop(this, event)" ondragenter="dragenter(this, event)" ondragover="dragover(event)" ondragleave="dragleave(this, event)">CEIP Trajano
+		</div>
+		
+		<div class="container" id="drag_and_drop4" ondrop="drop(this, event)" ondragenter="dragenter(this, event)" ondragover="dragover(event)" ondragleave="dragleave(this, event)">CEIP Suárez Somonte
+		</div>
+		
+		<div class="container" id="drag_and_drop5" ondrop="drop(this, event)" ondragenter="dragenter(this, event)" ondragover="dragover(event)" ondragleave="dragleave(this, event)">CEIP Juan XXIII
+		</div>
+		
+		<div class="container" id="drag_and_drop6" ondrop="drop(this, event)" ondragenter="dragenter(this, event)" ondragover="dragover(event)" ondragleave="dragleave(this, event)">CEIP Antonio Machado
+		</div>
+		
+		<div class="container" id="drag_and_drop7" ondrop="drop(this, event)" ondragenter="dragenter(this, event)" ondragover="dragover(event)" ondragleave="dragleave(this, event)">CEIP Miguel de Cervantes
+		</div>
+		
+		<div class="container" id="drag_and_drop8" ondrop="drop(this, event)" ondragenter="dragenter(this, event)" ondragover="dragover(event)" ondragleave="dragleave(this, event)">CEIP Ciudad de Mérida
+		</div>
+		
+		<div class="container" id="drag_and_drop9" ondrop="drop(this, event)" ondragenter="dragenter(this, event)" ondragover="dragover(event)" ondragleave="dragleave(this, event)">CEIP Pablo Neruda
+		</div>
+		
+		<div class="container" id="drag_and_drop10" ondrop="drop(this, event)" ondragenter="dragenter(this, event)" ondragover="dragover(event)" ondragleave="dragleave(this, event)">CEIP Octavio Augusto
+		</div>
+		
+		<div class="container" id="drag_and_drop11" ondrop="drop(this, event)" ondragenter="dragenter(this, event)" ondragover="dragover(event)" ondragleave="dragleave(this, event)">CEIP Nuestra Señora de la Antigua
+		</div>
+		
+		<div class="container" id="drag_and_drop12" ondrop="drop(this, event)" ondragenter="dragenter(this, event)" ondragover="dragover(event)" ondragleave="dragleave(this, event)">CEIP Jose María de Calatrava
+		</div>
+		
+		<div class="container" id="drag_and_drop13" ondrop="drop(this, event)" ondragenter="dragenter(this, event)" ondragover="dragover(event)" ondragleave="dragleave(this, event)">CEIP Dion Casio
+		</div>
+		
+		<div class="container" id="drag_and_drop14" ondrop="drop(this, event)" ondragenter="dragenter(this, event)" ondragover="dragover(event)" ondragleave="dragleave(this, event)">CEIP Maximiliano Macías
+		</div>
+		
+	</div>
+
+	<!--Boton reinciar el drag and drop-->
+	<div id="boton_limpiar">
+		<button onclick="limpiar()">Limpiar Drag and Drop</button>
+	</div>
+	<!-- Si algún elemento ha sido arrastrado a algún contenedor, al refrescar la página lo movemos-->
+	<script>
+		
+		inicio();
+
+	</script>
+</body>
+</html>
+
